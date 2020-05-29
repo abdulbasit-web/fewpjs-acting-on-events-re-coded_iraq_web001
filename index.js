@@ -17,6 +17,15 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+//fix left value and return it
+function fixLeft() {
+  //take out px from 180px it reamin 180
+  let leftNumber = dodger.style.left.replace("px", "");
+  //convrt string to num
+  let left = parseInt(leftNumber);
+  return left;
+}
+
 //move left function
 function moveDodgerLeft() {
   console.log("Left Move");
@@ -54,14 +63,7 @@ function moveDown() {
   }
 }
 
-//fix left value and return it
-function fixLeft() {
-  //take out px from 180px it reamin 180
-  let leftNumber = dodger.style.left.replace("px", "");
-  //convrt string to num
-  let left = parseInt(leftNumber);
-  return left;
-}
+
 
 //fix bottom value and return it
 function fixBottom() {
