@@ -39,7 +39,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   console.log("Right Move");
   let left = fixLeft();
-  if (left <= box.clientWidth - 50) {
+  if (left > 0) {
     dodger.style.left = `${left + 10}px`;
   }
 }
